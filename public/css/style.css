@@ -1,0 +1,615 @@
+/*
+Theme Name:         Resume
+Description:        KKK
+Version:            1.0
+Author:             Jimmy
+License:            MIT License
+License URI:        http://www.opensource.org/licenses/mit-license.php
+*/
+
+/* Common */
+
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+code,
+del,
+dfn,
+em,
+img,
+q,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+
+	font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+
+#back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 9999;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 30px;
+	background: black;
+	color: white;
+	cursor: pointer;
+	border: 0;
+	/*border-radius: 2px;*/
+	text-decoration: none;
+	transition: opacity 0.4s ease-in-out;
+	opacity: 0;
+	font-size: 20px;
+    padding-top: 4px;
+}
+#back-to-top:hover {
+	/*background: #e9ebec;*/
+}
+#back-to-top.show {
+	opacity: 1;
+}
+
+
+.margin-top-15 {
+	margin-top: 15px;
+}
+
+.padding-left-15 {
+	padding-left: 15px;
+}
+
+.padding-left-20 {
+	padding-left: 20px;
+}
+
+.main-blue-word {
+	color: #3C5766;
+}
+
+.main-blue-background {
+	background-color: #3C5766;
+}
+
+.main-blue-hover-word {
+	color: #6E8898;
+}
+
+ 
+::-moz-selection { /* Code for Firefox */
+	color: white;
+	background: #3C5766;
+}
+
+::selection {
+	color: white;
+	background: #3C5766;
+}
+
+a {
+	color: #3C5766;
+}
+
+a:hover {
+	color: #6E8898;
+	text-decoration: none;
+}
+.progress {
+	height: 12px;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	border-radius: 6px;
+}
+.progress-bar {
+	background-color: #3C5766;
+	font-size: 12px;
+    line-height: 12px;
+}
+
+/* .page-index,
+.page-portfolio {
+	margin: 30px 0;
+} */
+
+body {
+	margin: 30px 0;
+}
+
+.box {
+	margin-bottom: 15px;
+}
+
+h1,
+h2, 
+h4 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+h2, 
+h4 {
+	border-bottom: 3px solid gray;
+	float: left;
+}
+
+.right-area h4 {
+	border: none;
+
+}
+
+.right-area h4:before {
+	content: "{";
+} 
+.right-area h4:after {
+	content: "}";
+}
+
+.content {
+	color: #666;
+	overflow: hidden;
+}
+
+.whole {
+
+}
+
+.whole-wrap {
+	border: 2px solid black;
+	/*background-color: #E3E1E4;*/
+	background-color: #D1D5D8;
+	padding: 30px;
+}
+.tag-area {
+	position: relative;
+	top: 2px;
+}
+
+.tag-area a {
+	color: white;
+}
+.tag-group {
+	position: absolute;
+	list-style: none;
+	right: 0;
+}
+.tag-group .tag {
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+    background-color: #6E8898;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px 25px;
+    display: inline-block;
+    color: white;
+
+}
+
+.tag-group .tag.active {
+	background-color: #3C5766;
+}
+
+
+/* Sidebar */
+
+
+.left-area {
+
+}
+
+
+.left-area .avatar {
+	width: 180px;
+	height: 180px;
+	overflow: hidden;
+	border-radius: 90px;
+	border: 4px solid #333;
+	/*margin: 0 auto;*/
+
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.left-area .avatar:hover {
+	opacity: 0.5;
+}
+
+.left-area .avatar .avatar-img {
+	width: 180px;
+	height: 180px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.left-area .name h1 {
+	margin-top: 0;
+
+}
+.left-area .title {
+	color: black;
+}
+.left-area .title .ph3 {
+	color: gray;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.left-area .title .ph3:before {
+	content: "{";
+}
+.left-area .title .ph3:after {
+	content: "}";
+}
+
+.left-area .icon-sets {
+
+}
+
+.left-area .icon-sets .icon-group {
+	list-style: none;
+	padding-left: 0;
+}
+.left-area .icon-sets .icon-group .icons {
+	display: inline-block;
+	text-align: center;
+	margin-right: 10px;
+}
+.left-area .icon-sets .icon-group .icons .icon-icon {
+	float: left;
+}
+.left-area .icon-sets .icon-group .icons .icon-text {
+	float: left;
+	padding-top: 15px;
+	padding-left: 5px;
+	font-size: 16px;
+}
+.left-area .contact {
+	
+}
+
+.left-area .social {
+	
+}
+.left-area .social .icons {
+	text-align: center;
+	color: #3C5766;
+}
+.left-area .social .links {
+	padding-top: 4px;
+}
+
+/* Index */
+
+
+/* Index Common */
+
+.footer {
+	margin: 30px 0;
+	text-align: center;
+}
+
+
+/* Index Area */
+
+
+
+.page-index .right-area {
+
+}
+
+
+
+.page-index .right-area .profile {
+
+}
+
+.page-index .right-area .skill {
+
+}
+
+.page-index .right-area .skill .height {
+	height: 32px;
+}
+
+.page-index .right-area .experience {
+
+}
+.page-index .right-area .experience .title {
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+}
+.page-index .right-area .experience .company {
+
+}
+.page-index .right-area .education {
+
+}
+.page-index .right-area .education .school {
+	color: black;
+}
+
+
+
+@media (max-width: 992px) {
+	.left-area .avatar {
+		margin: 0 auto;
+	}
+	.left-area .name,
+	.left-area .title {
+		text-align: center;
+
+	}
+	.left-area .social .icons {
+		text-align: left;
+	}
+}
+
+/* Portfolio */
+
+.page-portfolio .right-area .portfolio .image {
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-ms-transition: opacity 0.5s ease-in-out;
+	-o-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.page-portfolio .right-area .portfolio .image:hover {
+	opacity: 0.5;
+	
+}
+
+.page-portfolio .right-area .portfolio .content {
+	padding: 15px;
+	border-top: 2px solid black;
+	height: auto;
+}
+
+.page-portfolio .right-area .portfolio .content .padding-left-15:before {
+	/*content: "-";*/
+}
+
+.page-portfolio .right-area .portfolio .content .title {
+	font-size: 16px;
+	color: black;
+	margin-bottom: 15px;
+}
+
+.page-portfolio .right-area .portfolio .thumbnail {
+	border-radius: 0;
+	padding: 0;
+	border: 2px solid black;
+}
+
+
+
+@media (max-width: 992px) {
+	.page-portfolio .right-area .portfolio .content {
+		height: auto;
+	}
+}
+
+/*.page-portfolio .right-area .content-box {
+	-moz-column-count: 2;
+	-moz-column-gap: 10px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 10px;
+	column-count: 2;
+	column-gap: 10px;
+	display: inline;
+}
+
+.page-portfolio .right-area .content-box .content-box-inner {
+
+}*/
+
+
+@media print {
+
+	body {
+		font-size: 12px;
+	}
+	.whole-wrap {
+		border: none;
+	}
+
+	.col-print-1 {
+	    width: 8%;
+	    float: left;
+	}
+	
+	.col-print-2 {
+	    width: 16%;
+	    float: left;
+	}
+	
+	.col-print-3 {
+	    width: 25%;
+	    float: left;
+	}
+	
+	.col-print-4 {
+	    width: 33%;
+	    float: left;
+	}
+	
+	.col-print-5 {
+	    width: 42%;
+	    float: left;
+	}
+	
+	.col-print-6 {
+	    width: 50%;
+	    float: left;
+	}
+	
+	.col-print-7 {
+	    width: 58%;
+	    float: left;
+	}
+	
+	.col-print-8 {
+	    width: 66%;
+	    float: left;
+	}
+	
+	.col-print-9 {
+	    width: 75%;
+	    float: left;
+	}
+	
+	.col-print-10 {
+	    width: 83%;
+	    float: left;
+	}
+	
+	.col-print-11 {
+	    width: 92%;
+	    float: left;
+	}
+	
+	.col-print-12 {
+	    width: 100%;
+	    float: left;
+	}
+
+	.print-h-cancel-margin {
+		margin-top: 0px;
+	}
+
+	h1, h2, h3, h4 {
+		/*margin-top: 0;*/
+	}
+
+	h1 {
+		font-size: 26px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+	h4 {
+		font-size: 14px;
+	}
+
+	p {
+		margin-bottom: 5px;
+	}
+
+	.box {
+		margin-bottom: 0;
+	}
+	.left-label p {
+		font-weight: bold;
+	}
+	.left-label p:before  {
+		content: "・";
+	}
+	.right-label p {
+
+	}
+	.right-label p:before {
+		content: "　";
+	}
+
+
+
+
+	.left-area .social .icons {
+		text-align: center;
+	}
+
+	/* .page-index,
+	.page-portfolio {
+		margin: 0;
+	} */
+
+	body {
+		margin: 0;
+	}
+	
+	.page-index .right-area .skill .height {
+		height: 20px;
+	}
+	
+
+	.page-index .right-area .date {
+		/*margin-left: 10px;*/
+		text-align: right;
+		position: absolute;
+		right: 15px;
+		font-size: 1rem;
+	}
+
+	.page-index .right-area .experience .title {
+		font-weight: normal;
+	}
+
+	.page-index .right-area .education .school p {
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.page-index .right-area .education .date {
+		/*margin-top: 5px;*/
+		
+
+	}
+
+	.page-portfolio .right-area .portfolio .content,
+	.page-portfolio .right-area .portfolio .thumbnail  {
+		border: none;
+	}
+
+	.page-portfolio .right-area .portfolio .thumbnail .image {
+
+		border: 2px solid black;
+	}
+
+
+
+}
