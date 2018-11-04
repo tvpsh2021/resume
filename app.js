@@ -16,9 +16,8 @@ if (!isDevelopmentEnvironment) {
 	}));
 	app.use((req, res, next) => {
 		if (!isDevelopmentEnvironment && !req.secure) {
-			// console.log('req.headers.host -> ', req.headers.host);
-			// console.log('req.headers.host -> ', req.originalUrl.originalUrl);
-			res.redirect(301, 'https://' + req.headers.host + req.originalUrl);
+			const regex = /www./gi;
+			res.redirect(301, 'https://' + req.headers.host.replace(regex, '') + req.originalUrl);
 		}
 		next();
 	});
@@ -30,14 +29,10 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-	// console.log('req.headers.host -> ', req.headers.host);
-	// console.log('req.headers.host -> ', req.originalUrl);
 	res.render('pages/resume.pug');
 });
 
 app.get('/portfolio', (req, res) => {
-	// console.log('req.headers.host -> ', req.headers.host);
-	// console.log('req.headers.host -> ', req.originalUrl);
 	res.render('pages/portfolio.pug');
 });
 
