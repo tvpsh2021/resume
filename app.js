@@ -22,7 +22,7 @@ if (!isDevelopmentEnvironment) {
 			res.redirect(301, 'https://' + processedURL + req.originalUrl);
 		}
 
-		if (req.headers.host.slice(0, 3) === 'www.') {
+		if (req.headers.host.includes('www.')) {
 			res.redirect(301, 'https://' + processedURL + req.originalUrl);
 		}
 
