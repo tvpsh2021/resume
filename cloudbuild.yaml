@@ -1,5 +1,4 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/resume', '.']
-tags: ['$BRANCH_NAME-$SHORT_SHA', 'current']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/resume:$BRANCH_NAME-$SHORT_SHA', '-t', gcr.io/$PROJECT_ID/resume:current, '.']
 images: ['gcr.io/$PROJECT_ID/resume']
