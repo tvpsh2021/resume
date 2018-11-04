@@ -13,9 +13,10 @@
 
 # [START app_yaml]
 runtime: nodejs8
-handlers:
-- url: /.*
-  script: auto
-  secure: always
-  redirect_http_response_code: 301
+service: resume
+# handlers:
+# - url: /.*
+#   script: auto
+#   secure: always
+#   redirect_http_response_code: 301
 # [END app_yaml]
