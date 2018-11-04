@@ -13,7 +13,7 @@
 
 # [START app_yaml]
 runtime: nodejs8
-service: resume
+# service: resume
 # handlers:
 # - url: /.*
 #   script: auto
