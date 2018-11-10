@@ -1,5 +1,8 @@
 extends ../layouts/standard
 
+block head_title
+	title Portfolio - Jimmmmy.com
+
 block body_right_area
 	.page-portfolio
 		.right-area
@@ -160,4 +163,6 @@ block body_right_area
 												ul.padding-left-20
 													li Develop frontend layout
 													li SEO optimization
-							
+block body_scripts
+	script(src="js/masonry.pkgd.min.js")
+	script(src="js/portfolio.js")

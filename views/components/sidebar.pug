@@ -1,3 +1,5 @@
+- const { avatar, personal, contact, links } = Sidebar
+
 .left-area
 	.row
 		.col-xs-12
@@ -5,11 +7,11 @@
 				a(href="/")
 					img.img-responsive.img-circle(src="img/avatar2.jpg")
 		.col-xs-12
-			.title.hidden-print Web Developer
+			.title.hidden-print #{avatar.description}
 			.name.box
-				h1 Jimmy Cheng
+				h1 #{avatar.name}
 			.title.visible-print-block
-				.ph3 Web Developer
+				.ph3 #{avatar.description}
 		.col-xs-12.hidden-print
 			.icon-sets
 				ul.icon-group
@@ -39,28 +41,28 @@
 								p Full Name
 						.col-xs-8.col-print-12
 							.right-label
-								p 鄭景仁 / Chin-Jen Cheng
+								p #{personal.fullName}
 					.row
 						.col-xs-4.col-print-12
 							.left-label
 								p Birthday
 						.col-xs-8.col-print-12
 							.right-label
-								p January 6, 1990
+								p #{personal.birthday}
 					.row
 						.col-xs-4.col-print-12
 							.left-label
 								p Nationality
 						.col-xs-8.col-print-12
 							.right-label
-								p Taiwan
+								p #{personal.nationality}
 					.row
 						.col-xs-4.col-print-12
 							.left-label
 								p Languages
 						.col-xs-8.col-print-12
 							.right-label
-								p 中文, English
+								p #{personal.languages}
 				.row
 					.col-xs-12
 						h4 Contact
@@ -71,28 +73,28 @@
 								p Address
 						.col-xs-8.col-print-12
 							.right-label
-								p 3F, No.378, Nanxiang Rd.,
+								p #{contact.address1}
 					.row
 						.col-xs-4.hidden-print
 							.left-label
 								p
 						.col-xs-8.col-print-12
 							.right-label
-								p Luzhu District,
+								p #{contact.address2}
 					.row
 						.col-xs-4.hidden-print
 							.left-label
 								p
 						.col-xs-8.col-print-12
 							.right-label
-								p Taoyuan City, Taiwan, 33854
+								p #{contact.address3}
 					.row
 						.col-xs-4.col-print-12
 							.left-label
 								p Phone
 						.col-xs-8.col-print-12
 							.right-label
-								p +886 931 077 193
+								p #{contact.phone}
 					.row
 						.col-xs-4.col-print-12
 							.left-label
@@ -100,10 +102,10 @@
 						.col-xs-8.col-print-12.hidden-print
 							.right-label
 								p
-									a(href="mailto:tvpsh2020@gmail.com") tvpsh2020@gmail.com
+									a(href="mailto:tvpsh2020@gmail.com") #{contact.email}
 						.col-xs-8.col-print-12.visible-print-block
 							.right-label
-								p tvpsh2020@gmail.com
+								p #{contact.email}
 					.row.hidden
 						.col-xs-4.col-print-12
 							.left-label

@@ -7,7 +7,7 @@ html(lang="zh-TW", itemtype="http://schema.org/Article")
 			meta(name="description", content="Hi, This is Jimmy Cheng, I'm a Web Developer who lived in Taiwan.")
 			meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
 		block head_title
-			title Jimmmmy.com
+			//- title Jimmmmy.com
 		block head_style
 			link(rel="profile", href="http://gmpg.org/xfn/11")
 			link(rel="shortcut icon", href="favicon.ico")
@@ -34,7 +34,7 @@ html(lang="zh-TW", itemtype="http://schema.org/Article")
 				.whole-wrap
 					.row
 						.col-sm-4.col-print-4
-							include left_area.pug
+							include ../components/sidebar.pug
 						.col-sm-8.col-print-8
 							block body_right_area
 		.footer.hidden-print.hidden-xs.hidden-sm
@@ -46,5 +46,4 @@ html(lang="zh-TW", itemtype="http://schema.org/Article")
 			script(src="js/jquery-1.12.4.min.js")
 			script(src="js/bootstrap.min.js")
 			script(src="js/bootstrap-progressbar.min.js")
-			script(src="js/masonry.pkgd.min.js")
 			script(src="js/script.js")
