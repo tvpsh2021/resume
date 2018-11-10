@@ -2,7 +2,6 @@ const express = require('express');
 const helmet = require('helmet');
 const app = express();
 const Sidebar = require('./data/sidebar');
-
 const isDevelopmentEnvironment = process.env.NODE_ENV === 'development' ? true : false;
 
 if (!isDevelopmentEnvironment) {
@@ -40,7 +39,7 @@ app.get('/', (req, res) => {
 	res.render('pages/resume.pug', { Sidebar });
 });
 app.get('/portfolio', (req, res) => {
-	res.render('pages/portfolio.pug');
+	res.render('pages/portfolio.pug', { Sidebar });
 });
 app.use((req, res) => {
 	res.status(404);
