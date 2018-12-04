@@ -15,7 +15,7 @@ block body_right_area
 						.content
 							.row
 								.col-xs-12
-									p 4 years' experience as a web developer across front-end, back-end and some infrastructure. I can communicate and cooperate with others clearly. I've worked at startup and large company, so I know what should do in the different time by the growth stage of the company.
+									p 4 years' experience as a web developer across front-end, back-end and some infrastructure. I can communicate and cooperate with others clearly, and I know how to adjust my pace of work in the different growth stage of the company.
 									p For more works I've done please visit my portfolio: #[a(href="/portfolio") jimmmmy.com/portfolio]
 					.skill.box
 						.row
@@ -184,9 +184,9 @@ block body_right_area
 										p Develop back-end API, design system architecture, cooperate with front-end and mobile application team.
 										p I'm in charge of: #[br]
 											ul.padding-left-20
-												li #[.bold Back-end API development:] By using Golang and MySQL, follow RESTful principle, building highly available system (5 million database record increase monthly, nearly 1000 users online at the same time).
-												li #[.bold Website crawler development:] We need some data from other website for checksum, so we crawl other website densely and periodically. Considering our IP address may being block, we have several crawler server to avoid the checksum service break.
-												li #[.bold Develop API for mobile application:] To integrate with existing API, I build a middleware to filter the data which only needed by mobile application. I also make several cache mechanism, no matter it is checked by timestamp or hash, these is all for decrease the transmission cost.
+												li #[.bold Back-end API development:] Using Golang and MySQL, follow RESTful principle, building highly available service for our website.
+												li #[.bold Website crawler development:] I'm project owner for this project. We need some specific data from other website, so we crawl other website periodically. Using a controller to handle all crawlers which hosted on different server (prevent IP blocking), check data correctness before store to database.
+												li #[.bold Develop API for mobile application:] I'm project owner for this project. To integrate with existing API, I build a middleware to filter the data which only needed by mobile application. We have several cache mechanism for decrease the transmission cost.
 							hr.hidden-print
 							.row
 								.col-md-3.hidden-print
@@ -197,16 +197,18 @@ block body_right_area
 									.title.hidden-print
 										p 專案經理 / Project Manager
 									.title.visible-print-block
+										p @FLiPER Creative Inc. (Taiwan)
+									.company.visible-print-block
 										p 專案經理 / Project Manager
 											span.date Mar.2016 ~ Sep.2016
-									.company
+									.company.hidden-print
 										p @
 											a(href="https://flipermag.com/", target="_blank") FLiPER Creative Inc. (Taiwan)
 									.description
 										p Managed the progress of projects, contact with customers to help engineers and designers to accurately understand what customer needs.
 										p I'm in charge of: #[br]
 											ul.padding-left-20
-												li Project management (using Trello, Slack, TeamWeek, and Google Sheets).
+												li Project management.
 												li Customer development.
 												li System analysis and design.
 												li Establish the sales kit.
@@ -218,10 +220,10 @@ block body_right_area
 								.col-md-9
 									.title.hidden-print
 										p 工程師 / Engineer
-									.title.visible-print-block
+									.company.visible-print-block
 										p 工程師 / Engineer
 											span.date Mar.2015 ~ Sep.2016
-									.company
+									.company.hidden-print
 										p @
 											a(href="https://flipermag.com/", target="_blank") FLiPER Creative Inc. (Taiwan)
 									.description
@@ -241,10 +243,10 @@ block body_right_area
 								.col-md-9
 									.title.hidden-print
 										p 工程實習生 / Engineer Internship
-									.title.visible-print-block
+									.company.visible-print-block
 										p 工程實習生 / Engineer Internship
 											span.date Nov.2014 ~ Mar.2015
-									.company
+									.company.hidden-print
 										p @
 											a(href="https://flipermag.com/", target="_blank") FLiPER Creative Inc. (Taiwan)
 									.description
@@ -270,7 +272,7 @@ block body_right_area
 										p 銘傳大學 / Ming Chuan University
 											span.date Sep.2012 ~ Jan.2014
 									.field
-										p 資訊工程研究所 / Institute of CSIE
+										p 資訊工程研究所 (肄業) / Institute of CSIE (Dropout)
 							hr.hidden-print
 							.row
 								.col-md-3.hidden-print
