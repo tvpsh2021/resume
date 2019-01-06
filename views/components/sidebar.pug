@@ -1,7 +1,7 @@
-- const { avatar, personal, contact, links } = Sidebar
+- const { avatar, personal, contact, links } = SidebarData
 - const { fullName, birthday, nationality, languages } = personal
 - const { address1, address2, address3, phone, email, portfolio } = contact
-- const { linkedIn, blog, facebook, instagram } = links
+- const { github, linkedIn, blog, facebook, instagram } = links
 
 mixin getPersonalContent(data)
 	.row
@@ -105,6 +105,7 @@ mixin getLinksContent(data)
 					.col-xs-12
 						h4 Links
 				.content
+					+getLinksContent(github)
 					+getLinksContent(linkedIn)
 					+getLinksContent(blog)
 					+getLinksContent(facebook)
