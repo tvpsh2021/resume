@@ -1,7 +1,8 @@
 const express = require('express');
 const helmet = require('helmet');
 const app = express();
-const Sidebar = require('./data/sidebar');
+const SidebarData = require('./data/sidebar');
+const ResumeData = require('./data/resume');
 const isDevelopmentEnvironment = process.env.NODE_ENV === 'development' ? true : false;
 
 if (!isDevelopmentEnvironment) {
@@ -36,10 +37,10 @@ app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'pug');
 app.get('/', (req, res) => {
-	res.render('pages/resume.pug', { Sidebar });
+	res.render('pages/resume.pug', { SidebarData, ResumeData });
 });
 app.get('/portfolio', (req, res) => {
-	res.render('pages/portfolio.pug', { Sidebar });
+	res.render('pages/portfolio.pug', { SidebarData });
 });
 app.use((req, res) => {
 	res.status(404);

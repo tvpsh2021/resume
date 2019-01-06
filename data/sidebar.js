@@ -52,6 +52,12 @@ module.exports = {
 		},
 	},
 	links: {
+		github: {
+			title: 'GitHub',
+			content: 'github.com/tvpsh2020',
+			link: 'https://github.com/tvpsh2020/',
+			icon: 'fa fa-github fa-2x',
+		},
 		linkedIn: {
 			title: 'LinkedIn',
 			content: 'linkedin.com/in/tvpsh2020',
