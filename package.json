@@ -18,11 +18,11 @@
   },
   "homepage": "https://github.com/tvpsh2020/resume#readme",
   "dependencies": {
-    "express": "^4.16.4",
-    "helmet": "^3.14.0",
-    "pug": "^2.0.3"
+    "express": "^4.17.1",
+    "helmet": "^3.18.0",
+    "pug": "^2.0.4"
   },
   "devDependencies": {
-    "eslint": "^5.8.0"
+    "eslint": "^5.16.0"
   }
 }
