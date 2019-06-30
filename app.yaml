@@ -12,8 +12,8 @@
 # limitations under the License.
 
 # [START app_yaml]
-runtime: nodejs8
-# service: resume
+runtime: nodejs10
+service: default
 # handlers:
 # - url: /.*
 #   script: auto
