@@ -15,15 +15,18 @@ block body_right_area
 						.content
 							.row
 								.col-xs-12
-									p 4 years' experience as a web developer across front-end, back-end and some infrastructure. I can communicate and cooperate with others clearly, and I know how to adjust my pace of work in the different growth stage of the company.
-									p For more works I've done please visit my portfolio: #[a(href="/portfolio") jimmmmy.com/portfolio]
+									ul.padding-left-20
+										li 4 years' experience as a web developer across front-end, back-end and some infrastructure
+										li Can communicate and cooperate with others clearly
+										li Knowing how to adjust the pace of work in the different growth stage of the company
+										li Care organizational culture
 					.skill.box
 						.row
 							.col-xs-12
 								h2 Skill
 						.row
 							.col-xs-12
-								h4 front-end
+								h4.skill-title front-end
 						.content
 							.row
 								.col-xs-12
@@ -34,7 +37,8 @@ block body_right_area
 											.content
 												ul
 													li 4 years experience
-													li Familiar with HTML, CSS and more than 30 projects launched on production environment
+													li Familiar with HTML, CSS
+													li More than 30 projects launched on production environment
 													li ES6, Object-Oriented JavaScript
 										.col-sm-6.col-print-12
 											.skill-name
@@ -42,7 +46,7 @@ block body_right_area
 											.content
 												ul
 													li 1 year experience
-													li Have 3 projects launched on production environment with React and Redux
+													li Have 3 projects launched on production environment
 									.row
 										.col-sm-6.col-print-12
 											.skill-name
@@ -50,11 +54,11 @@ block body_right_area
 											.content
 												ul
 													li 1 year experience
-													li Have 1 projects launched on production environment with Sass and 3 for Stylus
+													li Have 1 project launched on production environment with Sass, 3 projects for Stylus
 						hr.hidden-print
 						.row
 							.col-xs-12
-								h4 back-end
+								h4.skill-title back-end
 						.content
 							.row
 								.col-xs-12
@@ -64,10 +68,10 @@ block body_right_area
 												p Node.js
 											.content
 												ul
-													li 1 year experience
+													li 1+ year experience
 													li Have 5 projects launched on production environment
 													li Develop API with Express.js, Swagger
-													li Write unit test with Jasmine, Mocha
+													li Writing test with Jasmine, Mocha
 										.col-sm-6.col-print-12
 											.skill-name
 												p Golang
@@ -82,7 +86,9 @@ block body_right_area
 												p PHP
 											.content
 												ul
-													li 2 years experience and most of time was using WordPress to develop themes and plugins, more than 10 projects launched on production environment
+													li 2 years experience
+													li Most of time was using WordPress to develop themes and plugins
+													li More than 10 projects launched on production environment
 										.col-sm-6.col-print-12
 											.skill-name
 												p [RDBMS] MySQL
@@ -97,29 +103,31 @@ block body_right_area
 											.content
 												ul
 													li CRUD
-													li Deal with real-time event by Google Cloud Functions
+													li Indexing
+													li (Firebase) Manually sharding
 						hr.hidden-print
 						.row
 							.col-xs-12
-								h4 Infrastructure
+								h4.skill-title Infrastructure
 						.content
 							.row
 								.col-xs-12
 									.row
 										.col-sm-6.col-print-12
 											.skill-name
-												p Docker
-											.content
-												ul
-													li Setting up environment by using Docker Compose
-										.col-sm-6.col-print-12
-											.skill-name
 												p Google Cloud Platform
 											.content
 												ul
-													li Handle cluster services by using Kubernetes Engine
+													li Handle cluster services using Kubernetes Engine
 													li Deploy services with Kubernetes and Docker
-													li Handle event trigger by using Cloud Functions with Firebase
+													li Creating event-driven applications using Cloud Functions with Firebase
+													li Using Stackdriver with customize log content to metric server
+										.col-sm-6.col-print-12
+											.skill-name
+												p Docker
+											.content
+												ul
+													li Setting up environment using Docker Compose
 					.experience.box
 						.row
 							.col-xs-12
@@ -140,15 +148,24 @@ block body_right_area
 										p @
 											a(href="https://inline.app/", target="_blank") inLine Apps Ltd. (Taiwan)
 									.description
-										p Our product is a restaurant booking system on iOS and browser. I'm in charge of back-end, front-end development and cloud service optimization (web team).
-										p I build a staging environment from scratch with our infrastructure stack, copy data from production (redacted sensitive information), this is for team to doing any testing like stress testing, performance testing, etc., we can also verify data consistency on this environment.
-										p Back-end develop stack: #[br]
-											ul.padding-left-20
-												li Using Node.js, Express.js, Swagger to develop back-end API.
-												li Using Firebase and PostgreSQL to store data, Redis (Redis Labs) to store global atomic data, and Elasticsearch (Amazon Elasticsearch Service) to store aggregated data for client.
-												li Using Jasmine for unit testing, CircleCI for CI, Google Kubernetes + Container Registry for CD.
-												li Using Stackdriver to metric and monitoring server status, data consistency, response time.
+										p #[.bold General]
+											ul
+												li Inline provide a tool for F&B service, focus on booking management system
+												li I'm in charge of back-end, front-end development and cloud service optimization, focus on back-end
+										p #[.bold Milestone]
+											ul
+												li Build a staging environment from scratch with our infrastructure stack, for the purpose of doing any testing like stress testing, performance testing, can also verify data consistency on this environment
 
+										p #[.bold Back-end development stack I used]
+											ul
+												li Using Node.js, Express.js, Swagger for all the service/application we have, including front-end and back-end
+												li Using Kubernetes for service, background job and cronjob
+												li Using Firebase and PostgreSQL to store data
+												li Using Redis (Redis Labs) to store global atomic flag and cache data
+												li Using Elasticsearch (Amazon Elasticsearch Service) to store aggregated data for client
+												li Using Jasmine for unit testing, CircleCI for CI, Google Kubernetes + Container Registry for CD
+												li Using New Relic, Stackdriver to metric and monitoring server status, data consistency, response time
+												li Using Transifex for i18n
 							hr.hidden-print
 							.row
 								.col-md-3.hidden-print
@@ -163,14 +180,27 @@ block body_right_area
 											span.date Dec.2017 ~ Aug.2018
 									.company
 										p @
-											a(href="http://ljit.io/", target="_blank") LJIT.io (Taiwan)
+											a(href="https://ljit.io/", target="_blank") LJIT.io (Taiwan)
 									.description
-										p As a full-stack developer, I use Node.js, MongoDB, Express.js, React, Redux on daily development. I've in charge for.
-										p I'm involved with projects below: #[br]
-											ul.padding-left-20
-												li #[.bold Customer service system:] Using Socket.io to build a total solution for customer and company, include chat room, analysis system, reporting system. I'm in charge of develop chat room feature, include front-end and back-end development.
-												li #[.bold Real-time chat system:] Our goal is to make a service like Twitch. I'm in charge of develop whole website from scratch, include front-end and back-end development.
-												li #[.bold Strategy recommendation system in lottery game:] I'm in charge of develop back-end logic, like lottery drawing calculation, and using Electron to build client-side application.
+										p #[.bold General]
+											ul
+												li Use Node.js, Express.js, Gulp.js, React, Redux, Pug, MongoDB, Redis
+												li I'm in charge of back-end, front-end development
+										p #[.bold Involved project]
+											ul
+												li #[.underline Customer service system]
+													ul
+														li Front-end and back-end develop for chat room, analysis system, reporting system
+														li Using Socket.io to communicate with client and server
+												li #[.underline Real-time chat system]
+													ul
+														li Front-end and back-end develop for landing page, admin dashboard, chat room
+														li Using Socket.io to communicate with client and server
+												li #[.underline Recommendation system in lottery game]
+													ul
+														li Back-end develop for gaming logic implementation, lottery drawing calculation
+														li Integration with lottery website, can do bet action by our service
+														li Using Electron to build client-side application
 							hr.hidden-print
 							.row
 								.col-md-3.hidden-print
@@ -187,13 +217,40 @@ block body_right_area
 										p @
 											a(href="http://www.paradise-soft.com/", target="_blank") Paradise Soft (Taiwan)
 									.description
-										p Develop back-end API, design system architecture, cooperate with front-end and mobile application team.
-										p I'm in charge of: #[br]
-											ul.padding-left-20
-												li #[.bold Back-end API development:] Using Golang and MySQL, follow RESTful principle, building highly available service for our website.
-												li #[.bold Website crawler development:] I take responsibility for this project. We need some specific data from other website, so we crawl other website periodically. Using a controller to handle all crawlers which hosted on different server (prevent IP blocking), check data correctness before store to database.
-												li #[.bold Develop API for mobile application:] I take responsibility for this project. To integrate with existing API, I build a middleware to filter the data which only needed by mobile application. We have several cache mechanism for decrease the network throughput.
+										p #[.bold General]
+											ul
+												li Focus on back-end, involved some infrastructure
+												li Cooperate with front-end team and mobile application team
+										p #[.bold Involved project]
+											ul
+												li #[.underline Back-end API]
+													ul
+														li Develop/maintain API and internal library
+														li Optimize MySQL query syntax
+												li #[.underline Crawler service]
+													ul
+														li Crawl target website periodically with task manager
+														li Control service with multiple Cloud Service Provider, prevent crawler from being blocked
+														li Implement crawler logic, fit all lottery game across the world
+														li Implement data validation, prevent fake result from spam website
+														li Implement simple failover mechanism
+												li #[.underline API for iOS and Android App]
+													ul
+														li Middleware between API and App
+														li Optimize response data content, decrease network throughput
+														li Implement API version control
+														li Implement App version control, can do live update for App, even rollback without submit to App Store
+										p #[.bold Back-end development stack I used]
+											ul
+												li Using Golang for back-end API development and front-end server side
+												li Using MySQL to store data, handling huge data by using index and partition
+												li Using Gulp.js to do batch task
 							hr.hidden-print
+							.row.hidden-print
+								.col-md-3
+								.col-md-9
+									h4 @
+										a(href="https://flipermag.com/", target="_blank") FLiPER Creative Inc. (Taiwan)
 							.row
 								.col-md-3.hidden-print
 									.date
@@ -207,9 +264,6 @@ block body_right_area
 									.company.visible-print-block
 										p 專案經理 / Project Manager
 											span.date Mar.2016 ~ Sep.2016
-									.company.hidden-print
-										p @
-											a(href="https://flipermag.com/", target="_blank") FLiPER Creative Inc. (Taiwan)
 									.description
 										p Managed the progress of projects, contact with customers to help engineers and designers to accurately understand what customer needs.
 										p I'm in charge of: #[br]
@@ -229,9 +283,6 @@ block body_right_area
 									.company.visible-print-block
 										p 工程師 / Engineer
 											span.date Mar.2015 ~ Sep.2016
-									.company.hidden-print
-										p @
-											a(href="https://flipermag.com/", target="_blank") FLiPER Creative Inc. (Taiwan)
 									.description
 										p Develop front-end and back-end for projects, and also maintained company's hardware and software.
 										p I'm in charge of: #[br]
@@ -252,9 +303,6 @@ block body_right_area
 									.company.visible-print-block
 										p 工程實習生 / Engineer Internship
 											span.date Nov.2014 ~ Mar.2015
-									.company.hidden-print
-										p @
-											a(href="https://flipermag.com/", target="_blank") FLiPER Creative Inc. (Taiwan)
 									.description
 										p Assist in the development of projects.
 										p What I've done in this position: #[br]

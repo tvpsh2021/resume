@@ -133,6 +133,10 @@ a:hover {
 	font-weight: bold;
 }
 
+.underline {
+	text-decoration: underline;
+}
+
 .page-index,
 .page-portfolio {
 	/* margin: 30px 0; */
@@ -143,28 +147,33 @@ a:hover {
 }
 
 h1,
-h2,
-h4 {
+h2 {
 	text-transform: uppercase;
 	font-weight: bold;
 }
 
-h2,
-h4 {
+h2 {
 	border-bottom: 3px solid gray;
 	float: left;
 }
 
-.right-area h4 {
+.left-area h4, .right-area h4.skill-title {
+	text-transform: uppercase;
+	font-weight: bold;
+	border-bottom: 3px solid gray;
+	float: left;
+}
+
+.right-area h4.skill-title {
 	border: none;
 
 }
 
-.right-area h4:before {
+.right-area h4.skill-title:before {
 	content: "{";
 }
 
-.right-area h4:after {
+.right-area h4.skill-title:after {
 	content: "}";
 }
 
@@ -479,9 +488,6 @@ h4 {
 
 	.print-h-cancel-margin {
 		margin-top: 0px;
-	}
-
-	h1, h2, h3, h4 {
 	}
 
 	h1 {
