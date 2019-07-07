@@ -1,4 +1,5 @@
 const express = require('express');
+const compression = require('compression');
 const helmet = require('helmet');
 const app = express();
 const SidebarData = require('./data/sidebar');
@@ -34,6 +35,7 @@ if (!isDevelopmentEnvironment) {
 
 app.set('port', process.env.PORT || 8080);
 app.use(express.static(__dirname + '/public'));
+app.use(compression());
 app.set('views', __dirname + '/views');
 app.set('view engine', 'pug');
 app.get('/', (req, res) => {
