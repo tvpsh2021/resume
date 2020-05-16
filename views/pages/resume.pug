@@ -10,52 +10,20 @@ block body_right_area
 				.col-xs-12
 					.profile.box
 						.row
-							.col-xs-12
-								h2 Profile
+							.col-xs-12.col-print-12
+								h2 Summary
 						.content
 							.row
 								.col-xs-12
 									ul.padding-left-20
-										li 4 years' experience as a web developer across front-end, back-end and some infrastructure
-										li Can communicate and cooperate with others clearly
-										li Knowing how to adjust the pace of work in the different growth stage of the company
+										li Web developer with 5 years experience
+										li Focus on back-end development
+										li Good at communicate and cooperate with different team members
 										li Care organizational culture
 					.skill.box
 						.row
-							.col-xs-12
+							.col-xs-12.col-print-12
 								h2 Skill
-						.row
-							.col-xs-12
-								h4.skill-title front-end
-						.content
-							.row
-								.col-xs-12
-									.row
-										.col-sm-6.col-print-12
-											.skill-name
-												p HTML, CSS, JavaScript
-											.content
-												ul
-													li 4 years experience
-													li Familiar with HTML, CSS
-													li More than 30 projects launched on production environment
-													li ES6, Object-Oriented JavaScript
-										.col-sm-6.col-print-12
-											.skill-name
-												p [Framework] React, Redux
-											.content
-												ul
-													li 1 year experience
-													li Have 3 projects launched on production environment
-									.row
-										.col-sm-6.col-print-12
-											.skill-name
-												p [CSS preprocessor] Sass, Stylus
-											.content
-												ul
-													li 1 year experience
-													li Have 1 project launched on production environment with Sass, 3 projects for Stylus
-						hr.hidden-print
 						.row
 							.col-xs-12
 								h4.skill-title back-end
@@ -63,71 +31,74 @@ block body_right_area
 							.row
 								.col-xs-12
 									.row
-										.col-sm-6.col-print-12
+										.col-sm-6.col-print-6
 											.skill-name
-												p Node.js
+												p Language
 											.content
 												ul
-													li 2 year experience
-													li Have 5 projects launched on production environment
-													li Develop API with Express.js, Swagger
-													li Writing test with Jasmine, Mocha
-										.col-sm-6.col-print-12
+													li Node.js
+													li Golang
+													li PHP
+										.col-sm-6.col-print-6
 											.skill-name
-												p Golang
+												p Framework
 											.content
 												ul
-													li 1 year experience
-													li Have 4 projects launched on production environment
-													li Have 2 side projects on GitHub
+													li Express.js
+													li Mocha
+													li Jasmine
 									.row
-										.col-sm-6.col-print-12
+										.col-sm-6.col-print-6
 											.skill-name
-												p PHP
+												p Database
 											.content
 												ul
-													li 2 years experience
-													li Most of time was using WordPress to develop themes and plugins
-													li More than 10 projects launched on production environment
-										.col-sm-6.col-print-12
+													li MySQL
+													li PostgreSQL
+													li MongoDB
+													li Firebase
+										.col-sm-6.col-print-6
 											.skill-name
-												p [RDBMS] MySQL, PostgreSQL
+												p Others
 											.content
 												ul
-													li CRUD
-													li Indexing, partition
-									.row
-										.col-sm-6.col-print-12
-											.skill-name
-												p [NoSQL] MongoDB, Firebase
-											.content
-												ul
-													li CRUD
-													li Indexing
-													li (Firebase) Manually sharding
+													li Redis
+													li Elasticsearch
+													li Docker
+													li Kubernetes (Google Cloud)
+													li CircleCI
+													li Cloud Functions
 						hr.hidden-print
 						.row
 							.col-xs-12
-								h4.skill-title Infrastructure
+								h4.skill-title front-end
 						.content
 							.row
 								.col-xs-12
 									.row
-										.col-sm-6.col-print-12
+										.col-sm-6.col-print-6
 											.skill-name
-												p Google Cloud Platform
+												p Language
 											.content
 												ul
-													li Handle cluster services using Kubernetes Engine
-													li Deploy services with Kubernetes and Docker
-													li Creating event-driven applications using Cloud Functions with Firebase
-													li Using Stackdriver with customize log content to metric server
-										.col-sm-6.col-print-12
+													li HTML
+													li CSS
+													li JavaScript
+										.col-sm-6.col-print-6
 											.skill-name
-												p Docker
+												p Framework
 											.content
 												ul
-													li Setting up environment using Docker Compose
+													li React
+													li Redux
+									.row
+										.col-sm-6.col-print-6
+											.skill-name
+												p CSS preprocessor
+											.content
+												ul
+													li Sass
+													li Stylus
 					.experience.box
 						.row
 							.col-xs-12
@@ -148,24 +119,28 @@ block body_right_area
 										p @
 											a(href="https://inline.app/", target="_blank") inLine Apps Ltd. (Taiwan)
 									.description
-										p #[.bold General]
+										ul
+											li Provide booking management system for Food and Beverage service
+											li Provide good quality of product which serve to 4+ countries in Asia, avg. 38K reservations created per day in 2019
+											li Work with remote team member located in New York
+											li Create Customer Service Guideline, planning how to handle customer service
+											li Planning API implementation guideline for develop team, separate single controller into several layer in API
+										p #[.bold Staging Environment]
 											ul
-												li Inline provide a tool for F&B service, focus on booking management system
-												li I'm in charge of back-end, front-end development and cloud service optimization, focus on back-end
-										p #[.bold Milestone]
+												li Build a staging environment with our infrastructure stack
+												li Integrate with Loader.io for the purpose of testing like stress testing, performance testing
+												li Integrate with CircleCI, make performance testing as one of our CI/CD pipeline
+												li Planning near-production data cloning and generating in this environment
+										p #[.bold Data Monitoring System]
 											ul
-												li Build a staging environment from scratch with our infrastructure stack, for the purpose of doing any testing like stress testing, performance testing, can also verify data consistency on this environment
+												li Gathering data from client (iOS App) and server, compare the difference to determine the synchronization status
+												li Measure latency between client and all cloud services, visualize on Kibana, populate data to Stackdriver and setup alert
+												li Determine the bottleneck, keep optimize our service
+										p #[.bold Billing System]
+											ul
+												li Maintain and handle current billing process
+												li Planning new billing system and accounting system, automate manual works including calculations, payment and invoicing, handle complicated pricing model
 
-										p #[.bold Back-end development stack I used]
-											ul
-												li Using Node.js, Express.js, Swagger for all the service/application we have, including front-end and back-end
-												li Using Kubernetes for service, background job and cronjob
-												li Using Firebase and PostgreSQL to store data
-												li Using Redis (Redis Labs) to store global atomic flag and cache data
-												li Using Elasticsearch (Amazon Elasticsearch Service) to store aggregated data for client
-												li Using Jasmine for unit testing, CircleCI for CI, Google Kubernetes + Container Registry for CD
-												li Using New Relic, Stackdriver to metric and monitoring server status, data consistency, response time
-												li Using Transifex for i18n
 							hr.hidden-print
 							.row
 								.col-md-3.hidden-print
@@ -182,10 +157,9 @@ block body_right_area
 										p @
 											a(href="https://ljit.io/", target="_blank") LJIT.io (Taiwan)
 									.description
-										p #[.bold General]
-											ul
-												li Use Node.js, Express.js, Gulp.js, React, Redux, Pug, MongoDB, Redis
-												li I'm in charge of back-end, front-end development
+										ul
+											li Use Node.js, Express.js, Gulp.js, React, Redux, Pug, MongoDB, Redis
+											li I'm in charge of back-end, front-end development
 										p #[.bold Involved project]
 											ul
 												li #[.underline Customer service system]
@@ -199,7 +173,7 @@ block body_right_area
 												li #[.underline Recommendation system in lottery game]
 													ul
 														li Back-end develop for gaming logic implementation, lottery drawing calculation
-														li Integration with lottery website, can do bet action by our service
+														li Integrate with lottery website
 														li Using Electron to build client-side application
 							hr.hidden-print
 							.row
@@ -217,16 +191,15 @@ block body_right_area
 										p @
 											a(href="http://www.paradise-soft.com/", target="_blank") Paradise Soft (Taiwan)
 									.description
-										p #[.bold General]
-											ul
-												li Focus on back-end, involved some infrastructure
-												li Cooperate with front-end team and mobile application team
+										ul
+											li Focus on back-end, involved some infrastructure
+											li Cooperate with front-end team and mobile application team
 										p #[.bold Involved project]
 											ul
 												li #[.underline Back-end API]
 													ul
 														li Develop/maintain API and internal library
-														li Optimize MySQL query syntax
+														li Optimize MySQL query
 												li #[.underline Crawler service]
 													ul
 														li Crawl target website periodically with task manager

@@ -22,6 +22,7 @@ html(lang="zh-TW", itemtype="http://schema.org/Article")
 			meta(property="og:description", content="Hi, This is Jimmy Cheng, I'm a Web Developer based in Taiwan.")
 			meta(property="og:site_name", content="Jimmmmy.com")
 	body
+		- const year = new Date().getFullYear()
 		noscript
 			iframe(src="//www.googletagmanager.com/ns.html?id=GTM-N5NTRF", height="0", width="0", style="display:none;visibility:hidden")
 		a#back-to-top.hidden-print(href="#", title="Back to top") &uarr;
@@ -29,14 +30,14 @@ html(lang="zh-TW", itemtype="http://schema.org/Article")
 			.whole
 				.whole-wrap
 					.row
-						.col-sm-4.col-print-4
+						.col-sm-4.col-print-12
 							include ../components/sidebar.pug
-						.col-sm-8.col-print-8
+						.col-sm-8.col-print-12
 							block body_right_area
 		.footer.hidden-print.hidden-xs.hidden-sm
 			.container
 				.row
-					.col-xs-12 Copyright © 2020 Jimmmmy.com. Designed by myself and it's not coming from any template website.
+					.col-xs-12 Copyright © #{year} Jimmmmy.com
 		block body_scripts
 			script(src="js/jquery-1.12.4.min.js")
 			script(src="js/bootstrap.min.js")
