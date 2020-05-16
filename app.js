@@ -14,7 +14,7 @@ const logger = bunyan.createLogger({
 });
 
 app.use((req, res, next) => {
-  if (isDevEnvironment) {
+  if (!isDevEnvironment) {
     const regex = /www./gi;
     const processedURL = req.headers.host.replace(regex, '');
     if (!req.secure || req.headers.host.includes('www.')) {
