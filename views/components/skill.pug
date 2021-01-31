@@ -1,0 +1,40 @@
+- const { skill } = ResumeData
+- const { frontend, backend } = skill
+
+mixin getSkillContent(data)
+	.row
+		.col-xs-12
+			- for (let i = 0; i < data.length; i++)
+				if i % 2 === 0
+					.row
+						.col-sm-6.col-print-6
+							.skill-name
+								p #{data[i].title}
+							.content
+								ul
+									each content in data[i].content
+										li #{content}
+						- const next = data[i + 1]
+						if next
+							.col-sm-6.col-print-6
+								.skill-name
+									p #{next.title}
+								.content
+									ul
+										each content in next.content
+											li #{content}
+
+.row
+	.col-xs-12.col-print-12
+		h2 Skill
+.row
+	.col-xs-12
+		h4.skill-title back-end
+.content
+	+getSkillContent(backend)
+hr.hidden-print
+.row
+	.col-xs-12
+		h4.skill-title front-end
+.content
+	+getSkillContent(frontend)

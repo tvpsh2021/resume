@@ -1,0 +1,20 @@
+- const { education } = ResumeData
+
+.row
+	.col-xs-12
+		h2 Education
+.content
+	each val in education
+		.row
+			.col-md-3.hidden-print
+				.date
+					p
+						span.label.label-default.main-blue-background #{val.date}
+			.col-md-9.col-print-12
+				.school.hidden-print
+					p #{val.title}
+				.school.visible-print-block
+					p #{val.title}
+						span.date #{val.date}
+				.field
+					p #{val.field}

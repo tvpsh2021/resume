@@ -133,6 +133,10 @@ a:hover {
 	font-weight: bold;
 }
 
+.bold-pure {
+	font-weight: bold;
+}
+
 .underline {
 	text-decoration: underline;
 }

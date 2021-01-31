@@ -38,6 +38,13 @@ module.exports = {
         "before": false,
         "after": true
       }
-    ]
+    ],
+    "comma-dangle": ["error", {
+      "arrays": "never",
+      "objects": "never",
+      "imports": "never",
+      "exports": "never",
+      "functions": "never"
+    }]
   }
 };

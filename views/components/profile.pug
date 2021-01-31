@@ -1,0 +1,12 @@
+- const { summary } = ResumeData
+- const { content } = summary
+
+.row
+	.col-xs-12.col-print-12
+		h2 Summary
+.content
+	.row
+		.col-xs-12
+			ul.padding-left-20
+				each val in content
+					li #{val}
