@@ -1,17 +1,12 @@
 const express = require('express');
 const compression = require('compression');
 const helmet = require('helmet');
-const bunyan = require('bunyan');
 
 const SidebarData = require('./data/sidebar');
 const ResumeData = require('./data/resume');
 
 const app = express();
 const isDevEnvironment = process.env.NODE_ENV === 'development' ? true : false;
-const logger = bunyan.createLogger({
-  name: 'resume',
-  level: 'info'
-});
 
 app.use((req, res, next) => {
   if (!isDevEnvironment) {
@@ -45,12 +40,12 @@ app.get('/portfolio', (req, res) => {
 });
 
 app.use((req, res) => {
-  logger.warn({ path: req.url }, 'request from invalid path');
+  console.warn('request from invalid path:', req.url);
   res.status(404).json({
     message: 'Not found.'
   });
 });
 
 app.listen(app.get('port'), () => {
-  logger.info({ port: app.get('port') }, 'resume server start');
+  console.log('server start at port', app.get('port'));
 });
