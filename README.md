@@ -9,7 +9,8 @@ This is my resume, host on Google App Engine, written in [Pug](https://pugjs.org
 ## Development
 
 ```bash
-$ npm run dev
+$ yarn install
+$ yarn run dev
 ```
 
 ## Deploy

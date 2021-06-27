@@ -1,26 +1,17 @@
 module.exports = {
   summary: {
     content: [
-      'Web developer with 6 years experience',
-      'Focus on back-end development',
-      'Good at communicating and cooperating with different team members',
-      'Caring organizational cultures'
+      `Not just make work done, it's more about maintainability and stability, this is what I'm doing and what I'm chasing.`,
+      'Good at communicating and cooperating across different teams',
+      'I care people who work with me, care organizational cultures to make you feel safe to say anything about your thought, so I always encourage people to speak up, no matter who you are speaking with'
     ]
   },
   skill: {
     frontend: [
       {
-        title: 'Language',
-        content: [
-          'JavaScript',
-          'HTML',
-          'CSS'
-        ]
-      },
-      {
         title: 'Framework',
         content: [
-          'React',
+          'React 16.2',
           'Redux'
         ]
       },
@@ -36,17 +27,15 @@ module.exports = {
       {
         title: 'Language',
         content: [
-          'JavaScript (3 years, Node.js)',
-          'Golang (1 year)',
-          'PHP'
+          'Node.js (3 years)',
+          'Golang (1 year)'
         ]
       },
       {
         title: 'Database',
         content: [
-          'PostgreSQL',
-          'MySQL',
-          'MongoDB',
+          'PostgreSQL (GCP)',
+          'MongoDB (Atlas)',
           'Firebase'
         ]
       },
@@ -70,8 +59,8 @@ module.exports = {
         title: 'Others',
         content: [
           'Terraform',
-          'Redis',
-          'Elasticsearch',
+          'Redis (Redis Labs)',
+          'Elasticsearch (AWS)',
           'CircleCI',
           'Bitbucket Pipeline'
         ]
