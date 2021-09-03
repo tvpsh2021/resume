@@ -6,6 +6,40 @@
 		.col-md-3.hidden-print
 			.date
 				p
+					span.label.label-default.main-blue-background Dec.2020 ~ Now
+		.col-md-9
+			.title.hidden-print
+				p 工程師 / Engineer
+			.title.visible-print-block
+				p 工程師 / Engineer
+					span.date Dec.2020 ~ Now
+			.company
+				p @
+					a(href="https://shopline.tw/", target="_blank") SHOPLINE Limited. (Taiwan)
+			.description
+				ul
+					li New department in Shopline, provides custom service for our Key Accounts
+					li Use most serverless stack with AWS to fulfill requirements
+
+				p #[.bold Introduced several enhancement]
+					ul
+						li Request to build general infra environment for teams with proving: <br> (1) VPC Network - dedicated IP address with 3 availability zones <br> (2) MongoDB - proving DynamoDB cannot fulfill requirements
+						li Enhance CI/CD process with more clear scripts, make everyone can run the same process when developing
+						li Develop common Node.js library
+						li Develop AWS Lambda with Express.js framework when we build Lambda as API service, ready to migrate to any dedicated server anytime
+						li Introducing service metrics with AWS Lambda Insights and X-Ray, make everyone treat monitoring with importance
+						li Start configuring Log rotation, reduce useless CloudWatch logs
+						li Start testing with isolation environment
+				p #[.bold Redemption Service]
+					ul
+						li First service-oriented application from our team, not just build for one client
+						li Project planning, system designing, task assigning, developing, maintaining
+
+	hr.hidden-print
+	.row
+		.col-md-3.hidden-print
+			.date
+				p
 					span.label.label-default.main-blue-background Sep.2018 ~ Nov.2020
 		.col-md-9
 			.title.hidden-print
@@ -26,18 +60,18 @@
 				p #[.bold Staging Environment]
 					ul
 						li Build a staging environment with our infrastructure stack
-						li Integrate with Loader.io for the purpose of testing like stress testing, performance testing
+						li Integrate with Loader.io for the purpose of testing, e.g. stress testing, performance testing
 						li Integrate with CircleCI, make performance testing as one of our CI/CD pipeline
-						li Planning near-production data cloning and generating in staging environment
+						li Planning near-production data cloning and generating for staging environment
 				p #[.bold Data Monitoring System]
 					ul
 						li Gathering data from client (iOS App) and server, compare the difference to determine the data synchronization status
-						li Measure latency between client and all cloud services, visualize in Kibana, populate data to Stackdriver and setup alert
-						li Determine the bottleneck, keep optimize our service
+						li Measure latency between client and all cloud services, visualized on Kibana, populate data to Google Stackdriver and setup correspond alerts
+						li Determine the bottleneck by metrics, keep optimizing our service
 				p #[.bold Billing System]
 					ul
-						li Maintain and handle the current billing process
-						li Planning new billing system and accounting system, automate manual works including calculations, payment and invoicing, handling complicate pricing model
+						li Maintain and handle current billing process
+						li Planning new billing system and accounting system <br> Automate all manual works like billing calculations, payments & payouts invoicing <br> Handling complicate pricing model
 	hr.hidden-print
 	.row
 		.col-md-3.hidden-print
