@@ -29,7 +29,7 @@ module.exports = {
       {
         title: 'Language',
         content: [
-          'Node.js (3 years)',
+          'Node.js (4 years)',
           'Golang (1 year)'
         ]
       },

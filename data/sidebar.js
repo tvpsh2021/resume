@@ -42,19 +42,25 @@ module.exports = {
       title: 'GitHub',
       content: 'github.com/tvpsh2021',
       link: 'https://github.com/tvpsh2021/',
-      icon: 'fa fa-github fa-2x'
+      icon: 'fa-brands fa-github fa-2x'
     },
     linkedIn: {
       title: 'LinkedIn',
       content: 'linkedin.com/in/tvpsh2020',
       link: 'https://www.linkedin.com/in/tvpsh2020/',
-      icon: 'fa fa-linkedin fa-2x'
+      icon: 'fa-brands fa-linkedin fa-2x'
     },
     blog: {
       title: 'Blog',
       content: 'blog.jimmmmy.com',
       link: 'https://blog.jimmmmy.com/',
       icon: 'fa fa-wordpress fa-2x'
+    },
+    medium: {
+      title: 'Medium',
+      content: '@mywonder',
+      link: 'https://medium.com/@mywonder',
+      icon: 'fa-brands fa-medium fa-2x'
     },
     facebook: {
       title: 'Facebook',
@@ -66,7 +72,7 @@ module.exports = {
       title: 'Instagram',
       content: '@tvpsh2020',
       link: 'https://www.instagram.com/tvpsh2020/',
-      icon: 'fa fa-instagram fa-2x'
+      icon: 'fa-brands fa-instagram fa-2x'
     }
   }
 };

@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 
 app.enable('trust proxy');
 
-app.use(helmet());
+// app.use(helmet());
 app.use(compression());
 
 app.use(express.static(__dirname + '/public'));
