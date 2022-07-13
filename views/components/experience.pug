@@ -2,6 +2,11 @@
 	.col-xs-12
 		h2 Experience
 .content
+	.row.hidden-print
+		.col-xs-12
+			h4
+				.company
+					a(href="https://shopline.com/", target="_blank") SHOPLINE (Taiwan)
 	.row
 		.col-md-3.hidden-print
 			.date
@@ -11,30 +16,36 @@
 			.title.hidden-print
 				p 工程師 / Engineer
 			.title.visible-print-block
+				p SHOPLINE (Taiwan)
+			.company.visible-print-block
 				p 工程師 / Engineer
 					span.date Dec.2020 ~ Now
-			.company
-				p @
-					a(href="https://shopline.tw/", target="_blank") SHOPLINE Limited. (Taiwan)
 			.description
 				ul
-					li I'm in a new department in Shopline, providing custom service projects for our Key Accounts
-					li Using serverless stack with AWS to fulfill requirements
-
-				p #[.bold Introduced several enhancements]
+					li Join a new department "Custom Service Team" in Shopline, providing custom service for key accounts
+					li Introduced several enhancements, including Terraform script, CI/CD pipeline process, service monitoring, log rotation, unit test
+					li Introduced Express.js framework into Lambda function, planning to migrate to container based solution
+				p #[.bold Propose and push our team to have our own product]
 					ul
-						li Building a dedicated infra environment for our team with proof
-						li Enhance the CI/CD process with clear scripts
-						li Developed AWS Lambda Functions with Express.js framework, ready to migrate to any dedicated server at any time
-						li Introducing service metrics with AWS Lambda Insights and X-Ray, treat monitoring with importance
-						li Introduce log rotation, reduce useless CloudWatch logs
-						li Writing unit test in isolated environment
-				p #[.bold Initiate product oriented project]
+						li Collect requirements from merchants, abstract the business logic, and build product for everyone
+						li In charge of product planning, system designing, task arrangement, developing, and maintaining
+				p #[.bold Published products]
 					ul
-						li Not just build for a single client
-						li In charge of project planning, system designing, task assigning, developing, and maintaining
-
+						li #[.underline O2O QR Code Redemption Service]
+							ul
+								li Solution for clients to buy online, redeem offline
+								li Flexible, multiple scenario to fit several kinds of merchants requirements, e.g. Retailer, Department Store, Social E-Commerce (high QPS scenario)
+								li Have 5 activity merchants, published 30k redeem coupons
+						li #[.underline Product multi-variation images for eShop]
+							ul
+								li A plugin for Shopline merchants to have multiple images in variation product
+								li Have 5 activity merchants
 	hr.hidden-print
+	.row.hidden-print
+		.col-xs-12
+			h4
+				.company
+					a(href="https://inline.app/", target="_blank") inline Apps (Taiwan)
 	.row
 		.col-md-3.hidden-print
 			.date
@@ -44,36 +55,35 @@
 			.title.hidden-print
 				p 工程師 / Engineer
 			.title.visible-print-block
+				p inline Apps (Taiwan)
+			.company.visible-print-block
 				p 工程師 / Engineer
 					span.date Sep.2018 ~ Nov.2020
-			.company
-				p @
-					a(href="https://inline.app/", target="_blank") inLine Apps Ltd. (Taiwan)
 			.description
 				ul
 					li Provide a booking management system for Food and Beverage service
 					li Provide good quality products which serve 4+ countries in APAC, avg. 38K reservations created per day in 2019
-					li Work with remote team members located in New York
-					li Create Customer Service Guideline, planning how to handle customer service
-					li Planning API implementation guideline for development team, separate single controller into several layers in API
-				p #[.bold Build staging environment]
+					li Working closely with remote team members located in New York, Hong Kong, Singapore
+					li Contributed to lots of documentations e.g. implementation guideline, troubleshooting, knowledge base
+					li Refactor API controller, separate into several layers and repository layers
+				p #[.bold Create staging environment]
 					ul
-						li Build a staging environment with our infrastructure stack
 						li Integrate with Loader.io for the purpose of testing, e.g. stress testing, performance testing
-						li Integrate with CircleCI, make performance testing as one of our CI/CD pipelines
-						li Planning near-production data cloning and generating for staging environment
+						li Integrate with CircleCI, make performance testing as one of CI/CD pipelines
 				p #[.bold Enhance data monitoring system]
 					ul
 						li Gathering data from client (iOS App) and server, compare the difference to determine the data synchronization status
 						li Measure latency between client and all cloud services, visualized on Kibana, populate data to Google Stackdriver and set up corresponding alerts
-						li Determine the bottleneck by metrics, keep optimizing our service
 				p #[.bold Build billing system]
 					ul
-						li Maintain and handle the current billing process
 						li Planning new billing system and accounting system
-						li Automate all manual tasks like billing calculations, payments & payouts invoicing
-						li Handling complicated pricing models
+						li Automate all manual tasks, e.g. billing calculations, payments and payouts invoicing
+
 	hr.hidden-print
+	.row.hidden-print
+		.col-xs-12
+			h4
+				.company LJIT.io
 	.row
 		.col-md-3.hidden-print
 			.date
@@ -83,11 +93,10 @@
 			.title.hidden-print
 				p 工程師 / Engineer
 			.title.visible-print-block
+				p LJIT.io
+			.company.visible-print-block
 				p 工程師 / Engineer
 					span.date Dec.2017 ~ Aug.2018
-			.company
-				p @
-					a(href="https://ljit.io/", target="_blank") LJIT.io (Taiwan)
 			.description
 				ul
 					li Use Node.js, Express.js, Gulp.js, React, Redux, Pug, MongoDB, Redis
@@ -107,6 +116,11 @@
 								li Back-end development for gaming logic implementation, lottery drawing calculation
 								li Using Electron to build client-side applications
 	hr.hidden-print
+	.row.hidden-print
+		.col-xs-12
+			h4
+				.company
+					a(href="http://www.paradise-soft.com/", target="_blank") Paradise Soft
 	.row
 		.col-md-3.hidden-print
 			.date
@@ -116,11 +130,10 @@
 			.title.hidden-print
 				p 後端工程師 / Back-end Developer
 			.title.visible-print-block
+				p Paradise Soft
+			.company.visible-print-block
 				p 後端工程師 / Back-end Developer
 					span.date Oct.2016 ~ Dec.2017
-			.company
-				p @
-					a(href="http://www.paradise-soft.com/", target="_blank") Paradise Soft (Taiwan)
 			.description
 				ul
 					li Cooperate with the front-end team and mobile application team
@@ -144,13 +157,12 @@
 					ul
 						li Using Golang for back-end API development
 						li Using MySQL to store data, handling huge data by using index and partition
-						li Using Gulp.js to do the batch task
+						li Using Gulp.js to do batch tasks
 	hr.hidden-print
 	.row.hidden-print
-		.col-md-3
-		.col-md-9
-			h4 @
-				a(href="https://flipermag.com/", target="_blank") FLiPER Creative Inc. (Taiwan)
+		.col-xs-12
+			h4
+				a(href="https://flipermag.com/", target="_blank") FLiPER Creative Inc.
 	.row
 		.col-md-3.hidden-print
 			.date
@@ -160,7 +172,7 @@
 			.title.hidden-print
 				p 專案經理 / Project Manager
 			.title.visible-print-block
-				p @FLiPER Creative Inc. (Taiwan)
+				p FLiPER Creative Inc.
 			.company.visible-print-block
 				p 專案經理 / Project Manager
 					span.date Mar.2016 ~ Sep.2016

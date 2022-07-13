@@ -1,11 +1,10 @@
 module.exports = {
   summary: {
     content: [
-      'Developing service with maintainability and stability',
-      'Love to document everything',
-      'Love service monitoring, good at troubleshooting',
-      'Good at communicating and cooperating across different teams',
-      'Care organizational cultures, seeking an environment that makes everyone feel safe to speak up'
+      'Experience in designing and developing service with maintainability and stability',
+      'Have enthusiasm for documentation creating (tech & non-tech), service monitoring and service troubleshooting',
+      'Good at communicating and cooperating across different departments/teams',
+      'Care organizational cultures'
     ]
   },
   skill: {
