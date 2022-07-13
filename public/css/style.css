@@ -426,6 +426,10 @@ h2 {
 		font-size: 12px;
 	}
 
+	.whole {
+		margin: 0;
+	}
+
 	.whole-wrap {
 		border: none;
 	}
@@ -531,6 +535,11 @@ h2 {
 
 	.right-label p:before {
 		content: "　";
+	}
+
+	.left-area .avatar {
+		width: 150px;
+		height: 150px;
 	}
 
 	.left-area .social .icons {
