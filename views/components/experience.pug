@@ -22,7 +22,7 @@
 					span.date Dec.2020 ~ Now
 			.description
 				ul
-					li Join a new department "Custom Service Team" in Shopline, providing custom service for key accounts
+					li Join new department "Custom Service Team" in Shopline, providing custom service for key accounts
 					li Introduced several enhancements, including Terraform script, CI/CD pipeline process, service monitoring, log rotation, unit test
 					li Introduced Express.js framework into Lambda function, planning to migrate to container based solution
 				p #[.bold Propose and push our team to have our own product]
@@ -33,12 +33,12 @@
 					ul
 						li #[.underline O2O QR Code Redemption Service]
 							ul
-								li Solution for clients to buy online, redeem offline
-								li Flexible, multiple scenario to fit several kinds of merchants requirements, e.g. Retailer, Department Store, Social E-Commerce (high QPS scenario)
+								li Solution for clients to order on eShop, redeem in realistic shop
+								li Flexible, multiple scenario to fit several kinds of merchants requirements, e.g. Retailer, Department Store, Social E-Commerce
 								li Have 5 activity merchants, published 30k redeem coupons
 						li #[.underline Product multi-variation images for eShop]
 							ul
-								li A plugin for Shopline merchants to have multiple images in variation product
+								li A plugin for eShop to have multiple images in variation product
 								li Have 5 activity merchants
 	hr.hidden-print
 	.row.hidden-print
@@ -61,23 +61,19 @@
 					span.date Sep.2018 ~ Nov.2020
 			.description
 				ul
-					li Provide a booking management system for Food and Beverage service
-					li Provide good quality products which serve 4+ countries in APAC, avg. 38K reservations created per day in 2019
-					li Working closely with remote team members located in New York, Hong Kong, Singapore
+					li Backend service maintenance, new feature development
 					li Contributed to lots of documentations e.g. implementation guideline, troubleshooting, knowledge base
-					li Refactor API controller, separate into several layers and repository layers
-				p #[.bold Create staging environment]
+					li Working closely with remote team members located in New York, Hong Kong and Singapore
+				p #[.bold Staging environment plan]
 					ul
-						li Integrate with Loader.io for the purpose of testing, e.g. stress testing, performance testing
-						li Integrate with CircleCI, make performance testing as one of CI/CD pipelines
-				p #[.bold Enhance data monitoring system]
+						li The goal is to improve API stability, I'm in charge of staging environment creation with production infrastructure specification
+						li Do load testing to know current service capacity, with nearing-production data
+						li Make script to enable/disable all infra, reduce cost
+				p #[.bold Join finance team]
 					ul
-						li Gathering data from client (iOS App) and server, compare the difference to determine the data synchronization status
-						li Measure latency between client and all cloud services, visualized on Kibana, populate data to Google Stackdriver and set up corresponding alerts
-				p #[.bold Build billing system]
-					ul
-						li Planning new billing system and accounting system
-						li Automate all manual tasks, e.g. billing calculations, payments and payouts invoicing
+						li The goal is to collect our service fee accurately, and reduce manual tasks by automation
+						li Build new billing system with existing fee plans
+						li Build slack bot to generate specific report file, make finance team members can get the report on their own
 
 	hr.hidden-print
 	.row.hidden-print
@@ -99,22 +95,18 @@
 					span.date Dec.2017 ~ Aug.2018
 			.description
 				ul
-					li Use Node.js, Express.js, Gulp.js, React, Redux, Pug, MongoDB, Redis
+					li Tech stack:  Node.js, Express.js, Gulp.js, React, Redux, Pug, MongoDB, Redis
 					li I'm in charge of back-end and front-end development
 				p #[.bold Involved project]
 					ul
 						li #[.underline Customer service system]
 							ul
-								li Front-end and back-end development for the chat room, analysis system, and reporting system
+								li Including chat room, analysis system and reporting system
 								li Using Socket.io to communicate between client and server side
 						li #[.underline Real-time chat system]
 							ul
-								li Front-end and back-end development for the landing page, admin dashboard, chat room
+								li Including landing page, admin dashboard and chat room
 								li Using Socket.io to communicate between client and server side
-						li #[.underline Recommendation system in lottery game]
-							ul
-								li Back-end development for gaming logic implementation, lottery drawing calculation
-								li Using Electron to build client-side applications
 	hr.hidden-print
 	.row.hidden-print
 		.col-xs-12
@@ -136,28 +128,22 @@
 					span.date Oct.2016 ~ Dec.2017
 			.description
 				ul
-					li Cooperate with the front-end team and mobile application team
+					li Tech stack: Golang, MySQL, Gulp.js
+					li Cooperate with front-end team and mobile application team
 				p #[.bold Involved project]
 					ul
 						li #[.underline Back-end API]
 							ul
-								li Develop and maintain API
+								li Develop and maintain backend API
 								li Optimize MySQL query
 						li #[.underline Crawler service]
 							ul
 								li Crawl target website periodically with task manager
-								li Implemented data validation, preventing fake results from spam websites
-								li Implemented a simple failover for all crawler servers with Heartbeat Mechanism
+								li Implemented data validation system, preventing fake results from spam websites
 						li #[.underline API for iOS and Android App]
 							ul
 								li Optimize response data content, decrease network throughput
-								li Implemented API version control system
-								li Implemented App version control system, can do live(hot) update, support app rollback without re-submitting for review
-				p #[.bold Back-end development stack I used]
-					ul
-						li Using Golang for back-end API development
-						li Using MySQL to store data, handling huge data by using index and partition
-						li Using Gulp.js to do batch tasks
+								li Implemented mobile app version control system, can do live(hot) update, support app rollback without re-submitting for review
 	hr.hidden-print
 	.row.hidden-print
 		.col-xs-12
@@ -178,9 +164,7 @@
 					span.date Mar.2016 ~ Sep.2016
 			.description
 				ul.padding-left-20
-					li Project management
-					li Business development
-					li System analysis and design
+					li Project management and business development
 	.row
 		.col-md-3.hidden-print
 			.date
@@ -195,11 +179,10 @@
 			.description
 				p Contributed to outsourcing business
 				ul.padding-left-20
-					li Setup website infrastructure
 					li Developed websites using WordPress (PHP + MySQL)
-					li Customize the WordPress module, including administrator dashboard, membership level system, email system, online shop, and crowdfunding platform
-					li Design website front-end layout
-					li Developed payment gateway plugin for WooCommerce (AllPay, PayPal, ECPay, Pay2GO, Spagateway)
+					li Customize WordPress modules
+					li Design and develop front-end layout with WordPress theme system
+					li Developed payment gateway plugin for WooCommerce
 	.row
 		.col-md-3.hidden-print
 			.date
@@ -213,5 +196,4 @@
 					span.date Nov.2014 ~ Mar.2015
 			.description
 				ul.padding-left-20
-					li Developed Joomla's payment gateway plugin, using T-CAT (統一客樂得) Payment
-					li Developed WordPress plugin
+					li Developed plugins for Joomla's and WordPress

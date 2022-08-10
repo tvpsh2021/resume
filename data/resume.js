@@ -12,8 +12,8 @@ module.exports = {
       {
         title: 'Framework',
         content: [
-          'React 16.2',
-          'Redux'
+          'React 16.2 (1 year)',
+          'Redux (1 year)'
         ]
       },
       {
